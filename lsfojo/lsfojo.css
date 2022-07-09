@@ -1,0 +1,99 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Times New Roman;
+}
+.Heading{
+  text-transform: uppercase;
+  padding: 5%;
+  font-size: 20px;
+  font-weight: Bold;
+  text-align: center;
+  background-color: #2D3A51;
+  color: #fff;
+}
+.container1,.container2{
+  color: #000;
+  background-color: #8f9ebb;
+  }
+  h1{
+    padding: 2%;
+    text-align: center;
+  }
+  .form{
+    margin-left: 13%;
+    
+  }
+.form h1{
+  font-weight: 400;
+  font-size: 23px;
+  margin: 6px 0;
+}
+  
+.form p{
+  padding:12px 0;
+  font-size: 14px;
+}
+.form input{
+  font-size: 12px;
+  width: 80%;
+  padding: 10px 12px;
+  border: 0;
+  border-radius: 3px;
+  outline: none;
+}
+select{
+  width: 30%;
+  padding: 10px;
+}
+.full{
+  height: 125px;
+}
+.form button{
+  margin: 12px 0;
+  padding: 9px 30px;
+  border: 0;
+  border-radius: 3px;
+  align-items: center;
+  font-size: 15px;
+  font-weight: bold;
+  background-color:#2D3A51;
+  color: #fff;
+}
+.form button:hover{
+  background: transparent;
+  border: 1px solid #000;
+  color: #000;}
+
+  @media  screen and (min-width: 992px) {
+    .Heading{
+      font-size: 50px;
+    }
+      h1{
+        font-size: 50px;
+        padding: 2%;
+        text-align: center;
+      }
+      .form{
+        margin-left: 13%;
+      }
+    .form h1{
+      font-weight: 400;
+      margin: 6px 0;
+    }
+      
+    .form p{
+      padding:12px 0;
+      font-size: 25px;
+    }
+    .form input{
+      font-size: 20px;
+    }
+    .full{
+      height: 125px;
+    }
+    .form button{
+      margin: 15px 0;
+      font-size: 20px;
+    }
+  }

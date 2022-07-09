@@ -1,0 +1,132 @@
+@font-face {
+    font-family: "rische", sans-serif format('truetype');
+    src: url(fonts/Rische\ Regular.ttf);
+}
+@font-face {
+    font-family: "Bebasneue", sans serif format('truetype');
+    src: url(fonts/BebasNeue-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background: bisque;
+}
+.container1{
+    width: 100%;
+    background: black;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    top: 0;
+    z-index: 99999;
+    overflow: hidden;
+    animation: slide-out-container .6s  cubic-bezier(0.99, 0.036, 0.31, 0.97) 2.8s;
+    animation-fill-mode: forwards;
+}
+@keyframes slide-out-container{
+    0%{
+        height: 100vh;
+    }
+    40%{
+        height: 100vh;
+    }
+    100%{
+        height: 0%;
+    }
+}
+.loading{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loading .line-box{
+    padding: 2px;
+    width: 40%;
+    height: 20px;
+    border: 2px solid white;
+    margin-top: 12em;
+    border-radius: 20px;
+}
+.loading .line-box .line{
+    height: 12px;
+    border-radius: 20px;
+    background: grey;
+    animation: loading 2s forwards cubic-bezier(0,0,0,0);
+
+}
+@keyframes loading{
+    0%{
+      width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+#splash{
+ position: absolute;
+}
+.logo{
+    width: 500px;
+}
+.about-sec{
+    background: url(images/abtint.jpg) no-repeat left;
+    background-size: 55%;
+    background-color: bisque;
+    overflow: hidden;
+    padding: 100px 0;
+}
+.inner{
+    width: 55%;
+    float: right;
+    background-color: whitesmoke;
+    padding: 150px;
+}
+.inner h1{
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-family: 'rische';
+    font-size: 4em;
+    text-transform: capitalize;
+}
+.text{
+    font-size: 1em;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+    font-family: 'Bebasneue';
+}
+.skills{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+@media screen and (max-width:1200px){
+    .about-sec{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner{
+        width: 100%;
+    }
+}
+@media screen and (max-width:600px){
+    .about-sec{
+        padding: 0;
+    }
+    .inner{
+        padding: 60px;
+    }
+}

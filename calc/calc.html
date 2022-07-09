@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calc.css">
+    <title>Calculator</title>
+</head>
+<body>
+
+<div class="text">
+    <h1>Calculate it</h1>
+</div>
+ <form name="form1" class="calc1" action="calculator" method="post">
+<input type="text" name="answer" id="result">
+<br>
+</br>
+<input type="button" class="btdesign" value="C" onclick="form1.answer.value=''">
+<input type="button" class="btdesign" value="DEL" onclick="form1.answer.value=form1.answer.value.substring(0,form1.answer.value.length*1-1)">
+<input type="button" class="btdesign" value="00" onclick="form1.answer.value+='00'">
+<input type="button" class="operatorDesign" value="/" onclick="form1.answer.value+='/'">
+<br>
+</br>
+<input type="button" class="btdesign" value="7" onclick="form1.answer.value+='7'">
+<input type="button" class="btdesign" value="8" onclick="form1.answer.value+='8'">
+<input type="button" class="btdesign" value="9" onclick="form1.answer.value+='9'">
+<input type="button" class="operatorDesign" value="x" onclick="form1.answer.value+='*'">
+<br>
+</br>
+<input type="button" class="btdesign" value="4" onclick="form1.answer.value+='4'">
+<input type="button" class="btdesign" value="5" onclick="form1.answer.value+='5'">
+<input type="button" class="btdesign" value="6" onclick="form1.answer.value+='6'">
+<input type="button" class="operatorDesign" value="-" onclick="form1.answer.value+='-'">
+<br>
+</br>
+<input type="button" class="btdesign" value="1" onclick="form1.answer.value+='1'">
+<input type="button" class="btdesign" value="2" onclick="form1.answer.value+='2'">
+<input type="button" class="btdesign" value="3" onclick="form1.answer.value+='3'">
+<input type="button" class="operatorDesign" value="+" onclick="form1.answer.value+='+'">
+<br>
+</br>
+<input type="button" id="Zero" value="0" onclick="form1.answer.value+='0'">
+<input type="button" class="btdesign" value="." onclick="form1.answer.value+='.'">
+<input type="button" class="operatorDesign" value="=" onclick="form1.answer.value=eval(form1.answer.value)">
+
+
+
+
+
+
+ </form>
+</body>
+</html>

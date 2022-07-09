@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'gemstone';
+    src: url(fonts/Gemstone.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: #54217e;
+    line-height: 0.7em;
+}
+.text h1{
+    width: 100%;
+    height: auto;
+    margin: 0.7em 0;
+    text-align: center;
+    font-size: 4em;
+    color: white;
+    font-weight: lighter;
+    text-transform: capitalize;
+}
+.calc1{
+    width: 500px;
+    padding: 100px 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.25px;
+    text-align: center;
+    /* background-color: black; */
+}
+#result{
+    border: none;
+    background: white;
+    border-radius: 0.6em;
+    width: 20em;
+    font-size: 1em;
+    font-family: 'gemstone' sans-serif;
+    font-weight: lighter;
+    height: 3em;
+    margin: auto;
+    border: 1px solid transparent;
+    color: black;
+}
+.btdesign{
+    width: 55px;
+    height: 55px;
+    padding-top: -1;
+    border: none;
+    font-family: 'gemstone' sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    border-radius: 0.6em;
+    margin: 0.2em;
+    background-color: white;
+}
+.operatorDesign{
+    width: 55px;
+    height: 55px;
+    padding-top: -1;
+    border: none;
+    font-family: 'gemstone' sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    border-radius: 0.6em;
+    margin: 0.2em;
+    transition: 0.25px;
+    cursor: pointer;
+    background-color: white;
+}
+.operatorDesign:hover{
+    background-color: aquamarine;
+}
+#Zero{
+    width: 125px;
+    height: 55px;
+    padding-top: -1;
+    border: none;
+    font-family: 'gemstone' sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    border-radius: 0.6em;
+    margin: 0.2em;
+    transition: 0.25px;
+    cursor: pointer;
+    background: white;
+}

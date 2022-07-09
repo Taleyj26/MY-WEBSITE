@@ -1,0 +1,146 @@
+@font-face {
+    font-family: "rische", sans-serif format('truetype');
+    src: url(fonts/Rische\ Regular.ttf);
+}
+@font-face {
+    font-family: "Bebasneue", sans serif format('truetype');
+    src: url(fonts/BebasNeue-Regular.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container1{
+    width: 100%;
+    background: black;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    top: 0;
+    z-index: 99999;
+    overflow: hidden;
+    animation: slide-out-container .6s  cubic-bezier(0.99, 0.036, 0.31, 0.97) 2.8s;
+    animation-fill-mode: forwards;
+}
+@keyframes slide-out-container{
+    0%{
+        height: 100vh;
+    }
+    40%{
+        height: 100vh;
+    }
+    100%{
+        height: 0%;
+    }
+}
+.loading{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loading .line-box{
+    padding: 2px;
+    width: 40%;
+    height: 20px;
+    border: 2px solid white;
+    margin-top: 12em;
+    border-radius: 20px;
+}
+.loading .line-box .line{
+    height: 12px;
+    border-radius: 20px;
+    background: grey;
+    animation: loading 2s forwards cubic-bezier(0,0,0,0);
+
+}
+@keyframes loading{
+    0%{
+      width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+#splash{
+ position: absolute;
+}
+.logo{
+    width: 500px;
+}
+
+
+
+.design-sec{
+    width: 100%;
+    padding: 60px 0;
+    background: bisque;
+}
+p{
+    position: absolute;
+    color: white;
+    font-size: 20px;
+}
+.inner{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+.design-sec h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+}
+.border{
+    width: 180px;
+    height: 4px;
+    background: #333;
+    margin: 40px auto;
+}
+.design-sec .design-gallery{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+.design-sec .image{
+    flex: 25%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.design-sec .image img{
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+    filter: saturate(20%);
+    background-color: rgba(0,0,0,0.4);
+}
+.design-sec .image img:hover{
+    filter: saturate(100%);
+} 
+
+.design-sec .image:hover img{
+    transform: scale(1.4) rotate(15deg);
+}
+@media screen and (max-width:960px){
+    .design-sec .image{
+        flex: 33.33%;
+    }
+}
+@media screen and (max-width:768px){
+    .design-sec .image{
+        flex: 50%;
+    }
+}
+@media screen and (max-width:480px){
+    .design-sec .image{
+        flex: 100%;
+    }
+}
